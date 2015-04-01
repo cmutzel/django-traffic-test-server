@@ -1,2 +1,2 @@
 # f5-autoscale
-tools for autoscale in aws 
+A very simple django server which returns a bunch of HTTP header data
