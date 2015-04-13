@@ -8,10 +8,11 @@ https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
 import os, sys
-sys.path.append('/opt/bitnami/apps/django/django_projects/Project')
-os.environ.setdefault("PYTHON_EGG_CACHE", "/opt/bitnami/apps/django/django_projects/Project/egg_cache")
+#what is this for????
+sys.path.append('/usr/src/apps/project')
+#os.environ.setdefault("PYTHON_EGG_CACHE", "/usr/src/app/django/django_projects/Project/egg_cache")
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Project.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
